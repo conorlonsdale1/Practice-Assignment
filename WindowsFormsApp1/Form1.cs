@@ -16,5 +16,27 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Calculate the area of = rectangle
+            try
+            {
+                double width, height, area;
+                width = Convert.ToDouble(textBox1.Text);
+                height = Convert.ToDouble(textBox2.Text);
+                area = width * height;
+                label3.Text = "area = " + area;
+            }
+            catch
+            {
+                MessageBox.Show("Type in two numbers.");
+            }
+        }
     }
 }
